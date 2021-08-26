@@ -1,5 +1,9 @@
 # creep-catcher
 
+## Pre-requisites
+- MongoDB installed
+- MongoDB Tools installed
+
 ## First-time setup
 After cloning, run "npm install" 
 
