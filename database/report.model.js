@@ -6,15 +6,29 @@ const Schema = mongoose.Schema
 
 //Capitalised "Report" is template for a single entry in the "reports" schema
 let Report = new Schema({
-    report_date:{
-        type: Date
-    },
-    report_description:{
+    uniqueID:{
         type: String
     },
-    report_location: {
+    user:{
         type: String
-    }
+    },
+    description:{
+        type: String
+    },
+    location: {
+        type: String
+    },
+    date:{
+        type: Date,
+        default: Date.now
+    },
+    comments:[
+        {
+            user: String,
+            date: Date,
+            body: String
+        }
+    ]
 })
 
 //Export the 
