@@ -1,11 +1,19 @@
 # creep-catcher
 
 ## Pre-requisites
-- MongoDB installed
-- MongoDB Tools installed
+
+- MongoDB installed - [Instructions here](https://docs.mongodb.com/manual/administration/install-community/)
+- MongoDB Tools installed - [Instructions here](https://docs.mongodb.com/database-tools/installation/installation/)
+
+## Nice to Haves
+
+- Postman
+- MongoDB Compass
+- Nodemon
 
 ## First-time setup
-After cloning, run "npm install" 
+
+After cloning, run "npm install"
 
 cd into the react-app folder
 

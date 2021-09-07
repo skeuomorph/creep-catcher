@@ -6,8 +6,8 @@ const Schema = mongoose.Schema
 
 //Capitalised "Report" is template for a single entry in the "reports" schema
 let User = new Schema({
-    user:String,
-    emailAddress:String,
+    user:{type: String, unique: true, required: true, dropDups: true},
+    emailAddress:{type: String, unique: true, required: true, dropDups: true},
     password:String,
 })
 

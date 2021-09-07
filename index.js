@@ -4,11 +4,12 @@ const path = require("path")
 
 const dbRouter = require('./database/dbRouter.js')
 
+app.use(express.urlencoded({extended:false}))
+
 app.use("/db", dbRouter)
 
-app.get("/", (req, res)=>{
-    res.sendFile(path.join(__dirname,"react-app/build", "index.html"))
-})
+app.use(express.static(path.join(__dirname,'react-app/','build')))
+app.use(express.static('react-app/public'))
 
 app.listen(3000, ()=>{
     console.log("Server running")
