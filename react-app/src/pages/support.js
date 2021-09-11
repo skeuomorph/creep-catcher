@@ -1,7 +1,15 @@
+import styled from "styled-components"
+
+const PageHeader = styled.h2`
+  font-weight: bold;
+  margin: 2em auto;
+  text-align: center;
+`
+
 export default function Support() {
     return (
       <div>
-        <h2>Support</h2>
+        <PageHeader>Support</PageHeader>
       </div>
     );
   }

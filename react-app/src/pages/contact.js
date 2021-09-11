@@ -1,8 +1,15 @@
+import styled from "styled-components"
+
+const PageHeader = styled.h2`
+  font-weight: bold;
+  margin: 2em auto;
+  text-align: center;
+`
+
 export default function Contact() {
-    return (
-      <div>
-        <h2>Contact</h2>
-      </div>
-    );
-  }
-  
+  return (
+    <div>
+      <PageHeader>Contact</PageHeader>
+    </div>
+  );
+}

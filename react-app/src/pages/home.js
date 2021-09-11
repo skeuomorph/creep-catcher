@@ -1,7 +1,15 @@
+import styled from "styled-components"
+
+const PageHeader = styled.h2`
+  font-weight: bold;
+  margin: 2em auto;
+  text-align: center;
+`
+
 export default function Home() {
     return (
       <div>
-        <h2>Home</h2>
+        <PageHeader>Home</PageHeader>
         <form>
           <input type='text'></input>
         </form>

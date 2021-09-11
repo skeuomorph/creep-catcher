@@ -71,6 +71,11 @@ const MenuLink = styled(Link)`
   }
 `;
 
+const HomeLink = styled(Link)`
+  color: black;
+  text-decoration: none;
+`
+
 export class Navbar extends Component {
   constructor(props, context) {
     super(props, context);
@@ -94,40 +99,42 @@ export class Navbar extends Component {
   render() {
     return (
       <Bar>
-        <Title>Creep</Title>
-        <img src={logo} alt="Logo" />
-        <Title>Catcher</Title>
+        <HomeLink to="/" onClick={this.clicked}>
+          <Title>Creep</Title>
+          <img src={logo} alt="Logo" />
+          <Title>Catcher</Title>
+        </HomeLink>
 
         <ToggleMenu onClick={this.clicked}>burger</ToggleMenu>
         <Menu ref={this.menu}>
           <MenuItems menuVisibility={this.state.visible}>
             <MenuItem>
-              <MenuLink to="/map">
+              <MenuLink to="/map" onClick={this.clicked}>
                 <p>Search on Map</p>
               </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/report">
+              <MenuLink to="/report" onClick={this.clicked}>
                 <p>Report</p>
               </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/guidelines">
+              <MenuLink to="/guidelines" onClick={this.clicked}>
                 <p>Guidelines</p>
               </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/incidents">
+              <MenuLink to="/incidents" onClick={this.clicked}>
                 <p>My Incidents</p>
               </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/support">
+              <MenuLink to="/support" onClick={this.clicked}>
                 <p>Support</p>
               </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/contact">
+              <MenuLink to="/contact" onClick={this.clicked}>
                 <p>Contact</p>
               </MenuLink>
             </MenuItem>
