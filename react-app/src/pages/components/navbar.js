@@ -32,7 +32,8 @@ const Menu = styled.nav`
 `;
 
 const ToggleMenu = styled.button`
-  float: right;
+  position: absolute;
+  right: 0;
   height: inherit;
   width: 7em;
   border: none;
