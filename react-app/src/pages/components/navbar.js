@@ -2,6 +2,9 @@ import React, { Component, createRef } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+//Picture
+import logo from "../images/fakeLogo.png";
+
 const Bar = styled.div`
   text-align: center;
   border-bottom: solid black 2px;
@@ -9,11 +12,14 @@ const Bar = styled.div`
 `;
 const Title = styled.h1`
   display: inline-block;
+  vertical-align: top;
+  padding: 0 0.5em;
 `;
 const Menu = styled.nav`
   background-color: gray;
   border: solid 1px black;
-  width: 80%;
+  max-width: 80%;
+  min-width: 20em;
   position: fixed;
   right: -81%;
   top: 5.1em;
@@ -88,6 +94,7 @@ export class Navbar extends Component {
     return (
       <Bar>
         <Title>Creep</Title>
+        <img src={logo} alt="Logo" />
         <Title>Catcher</Title>
 
         <ToggleMenu onClick={this.clicked}>burger</ToggleMenu>
