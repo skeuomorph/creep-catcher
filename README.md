@@ -22,3 +22,7 @@ then "npm install" followed by "npm run build"
 cd ../
 
 then finally "npm start"
+
+## Front-end 
+
+Once you've set up your local build, "serve -s build" will serve *build > index.html* on the front-end, rendering the react pages from the *pages* folder.
