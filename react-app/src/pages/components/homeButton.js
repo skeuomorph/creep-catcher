@@ -2,20 +2,29 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const Button = styled(Link)`
+const Container = styled.div`
+    margin: 3em;
+    paddding: 3em;
+    width:100%;
+`
+
+const Button = styled.div`
     border: 1px solid black;
     background-color: gray;
-    text-decoration: none;
+    color: black;
     font-size: 3em;
-    padding: 0.5em 4em;
+    margin: 0.5em;
+    padding: 0.3em;
+    text-align: center;
+    min-width: 10em;
 `
 
 export class HomeButton extends Component{
     render(){
         return (
-        <div>
-            <Button>{this.props.title}</Button>
-        </div>
+            <Link style ={{textDecoration: 'none'}}>
+                <Button>{this.props.title}</Button>
+            </Link>
         );
     }
 }

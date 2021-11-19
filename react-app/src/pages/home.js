@@ -2,12 +2,14 @@ import styled from "styled-components";
 import HomeButton from "./components/homeButton";
 
 const Container = styled.div`
-display: flex;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  align-content:stretch;
 `
 const FlexDiv= styled.div`
   border:red solid 2px;
-  margin: 2em auto;
-  padding: 4em 3em;
+  flex:1;
 `
 
 export default function Home() {
@@ -18,7 +20,7 @@ export default function Home() {
           <HomeButton to="/incidents" title="My Incidents"></HomeButton>
           <HomeButton to="/support" title="Support"></HomeButton>
         </FlexDiv>
-        <FlexDiv>Goodbye</FlexDiv>
+        <FlexDiv>MAP GOES HERE</FlexDiv>
       </Container>
     );
   }
