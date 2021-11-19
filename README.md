@@ -11,18 +11,24 @@
 - MongoDB Compass
 - Nodemon
 
-## First-time setup
+# Setup
 
-After cloning, run "npm install"
+## Work on the Front End
 
-cd into the react-app folder
+After cloning, run,
 
-then "npm install" followed by "npm run build"
+`cd react-app`
 
-cd ../
+`npm install`
 
-then finally "npm start"
+`npm start`
 
-## Front-end 
+## Work on back end
 
-Once you've set up your local build, "serve -s build" will serve *build > index.html* on the front-end, rendering the react pages from the *pages* folder.
+`cd react-app`
+
+`npm run build` To build production version of React App
+
+`cd ../`
+
+`npm start`
